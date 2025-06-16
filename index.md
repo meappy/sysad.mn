@@ -139,6 +139,15 @@ title: Gerald Sim - Technology Professional
             <p>↑ Rotate</p>
             <p>Space Hard Drop</p>
           </div>
+          <div class="mobile-controls-left">
+            <button id="rotate-btn" class="mobile-btn">↻</button>
+            <button id="down-btn" class="mobile-btn">↓</button>
+          </div>
+          <div class="mobile-controls-right">
+            <button id="left-btn" class="mobile-btn">←</button>
+            <button id="right-btn" class="mobile-btn">→</button>
+            <button id="drop-btn" class="mobile-btn">⬇</button>
+          </div>
         </div>
       </div>
     </div>
@@ -756,6 +765,73 @@ body::before {
   font-size: 0.9rem;
 }
 
+.mobile-controls-left {
+  display: none;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(26, 26, 26, 0.95);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-radius: 12px;
+  padding: 0.6rem;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-controls-right {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  gap: 0.5rem;
+  background: rgba(26, 26, 26, 0.95);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  border-radius: 12px;
+  padding: 0.6rem;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-controls-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.mobile-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #64ffda;
+  background: rgba(26, 26, 26, 0.8);
+  color: #64ffda;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
+.mobile-btn:hover,
+.mobile-btn:active {
+  background: rgba(100, 255, 218, 0.2);
+  transform: scale(0.95);
+}
+
+.mobile-btn:focus {
+  outline: none;
+}
+
 /* Footer Fix */
 .site-footer {
   width: 100%;
@@ -817,6 +893,19 @@ body::before {
   .game-info {
     width: 100%;
     max-width: 300px;
+  }
+  
+  /* Show mobile controls on mobile */
+  .mobile-controls-left {
+    display: flex;
+  }
+  
+  .mobile-controls-right {
+    display: flex;
+  }
+  
+  .instructions {
+    display: none;
   }
 }
 
@@ -1203,6 +1292,67 @@ function initTetris() {
   
   document.getElementById('pause-btn').addEventListener('click', togglePause);
   document.getElementById('reset-btn').addEventListener('click', resetGame);
+  
+  // Mobile control handlers
+  function handleMobileControl(action) {
+    if (!gameState.gameRunning || gameState.gamePaused || !gameState.currentPiece) return;
+    
+    switch (action) {
+      case 'left':
+        if (isValidMove(gameState.currentPiece, gameState.currentX - 1, gameState.currentY)) {
+          gameState.currentX--;
+        }
+        break;
+      case 'right':
+        if (isValidMove(gameState.currentPiece, gameState.currentX + 1, gameState.currentY)) {
+          gameState.currentX++;
+        }
+        break;
+      case 'down':
+        if (isValidMove(gameState.currentPiece, gameState.currentX, gameState.currentY + 1)) {
+          gameState.currentY++;
+          gameState.score++;
+          updateDisplay();
+        }
+        break;
+      case 'rotate':
+        const rotated = rotatePiece(gameState.currentPiece);
+        rotated.colorIndex = gameState.currentPiece.colorIndex;
+        if (isValidMove(rotated, gameState.currentX, gameState.currentY)) {
+          gameState.currentPiece = rotated;
+        }
+        break;
+      case 'drop':
+        while (isValidMove(gameState.currentPiece, gameState.currentX, gameState.currentY + 1)) {
+          gameState.currentY++;
+          gameState.score += 2;
+        }
+        updateDisplay();
+        break;
+    }
+  }
+  
+  // Add event listeners for mobile controls
+  document.getElementById('left-btn').addEventListener('click', () => handleMobileControl('left'));
+  document.getElementById('right-btn').addEventListener('click', () => handleMobileControl('right'));
+  document.getElementById('down-btn').addEventListener('click', () => handleMobileControl('down'));
+  document.getElementById('rotate-btn').addEventListener('click', () => handleMobileControl('rotate'));
+  document.getElementById('drop-btn').addEventListener('click', () => handleMobileControl('drop'));
+  
+  // Add touch event listeners for better mobile responsiveness
+  ['left-btn', 'right-btn', 'down-btn', 'rotate-btn', 'drop-btn'].forEach(id => {
+    const btn = document.getElementById(id);
+    const action = id.replace('-btn', '');
+    
+    btn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      handleMobileControl(action);
+    });
+    
+    btn.addEventListener('touchend', (e) => {
+      e.preventDefault();
+    });
+  });
   
   // Keyboard controls
   document.addEventListener('keydown', (e) => {
