@@ -1,0 +1,85 @@
+# Site Configuration for sysad.mn
+title: "Gerald Sim - Technology Professional"
+description: "All things Automation"
+baseurl: ""
+url: "https://sysad.mn"
+
+# Author Information
+author:
+  name: "Gerald Sim"
+  email: "contact@sysad.mn"
+  linkedin: "geraldsim"
+  github: "meappy"
+  location: "Mongolia"
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Gerald Sim"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+
+# Navigation
+navigation:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "CV"
+    url: "/cv/"
+  - title: "Blog"
+    url: "/blog/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Contact"
+    url: "/contact/"
+
+# Social Links
+social:
+  linkedin: "https://www.linkedin.com/in/geraldsim/"
+  github: "https://github.com/meappy"
+  email: "contact@sysad.mn"
+
+# SEO
+google_analytics: # To be added
+google_site_verification: # To be added
+
+# Theme - using custom layout
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - README.md
