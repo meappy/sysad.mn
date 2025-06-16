@@ -50,12 +50,12 @@ title: Terminal Tetris - Gerald Sim
           </div>
           <div class="mobile-controls-left">
             <button id="rotate-btn" class="mobile-btn">↻</button>
-            <button id="down-btn" class="mobile-btn">↓</button>
+            <button id="drop-btn" class="mobile-btn">⬇</button>
           </div>
           <div class="mobile-controls-right">
             <button id="left-btn" class="mobile-btn">←</button>
             <button id="right-btn" class="mobile-btn">→</button>
-            <button id="drop-btn" class="mobile-btn">⬇</button>
+            <button id="down-btn" class="mobile-btn">↓</button>
           </div>
         </div>
       </div>
