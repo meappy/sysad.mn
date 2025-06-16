@@ -136,6 +136,11 @@ title: Gerald Sim - Technology Professional
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 body {
   background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
   color: #e0e0e0;
@@ -143,6 +148,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   position: relative;
+  width: 100%;
 }
 
 body::before {
@@ -606,6 +612,19 @@ body::before {
   }
 }
 
+/* Footer Fix */
+.site-footer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.site-footer .container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .section-container {
@@ -650,6 +669,35 @@ body::before {
   .hero-section {
     padding: 1rem;
   }
+  
+  /* Additional mobile fixes */
+  .hero-content {
+    padding: 0 1rem;
+  }
+  
+  .hero-quote::before,
+  .hero-quote::after {
+    display: none;
+  }
+  
+  .site-footer {
+    margin: 0;
+    width: 100vw;
+    max-width: 100vw;
+    left: 0;
+    right: 0;
+  }
+  
+  /* Ensure all sections don't overflow */
+  section {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  /* Prevent any element from causing horizontal scroll */
+  * {
+    max-width: 100vw !important;
+  }
 }
 </style>
 
@@ -676,10 +724,36 @@ const taglines = [
   "Localhost Sweet Localhost",
   "The Empire Strikes Back(up)",
   "Game of Nodes",
-  "Breaking Production Since Forever",
   "Debugging Life, One Server at a Time",
   "Turning Coffee into Uptime",
-  "All things Automation"
+  "All things Automation",
+  "Chaos Engineering Enthusiast",
+  "DevOps Sorcerer",
+  "Cloud Native, Coffee Positive",
+  "Terraform Destroyer of Worlds",
+  "Pipeline Dreams and Docker Schemes",
+  "Git Push and Pray",
+  "Automate All The Things",
+  "Scaling Mountains, Scaling Systems",
+  "Zero Downtime Hero",
+  "Container Orchestration Maestro",
+  "Infrastructure as Code Poet",
+  "Monitoring Everything That Moves",
+  "YAML Engineer Extraordinaire",
+  "Incident Response Ninja",
+  "CI/CD Pipeline Plumber",
+  "Serverless But Not Sleepless",
+  "Making Servers Purr Since 2010",
+  "Professional YAML Whisperer",
+  "Deployment Velocity Maximizer",
+  "SRE: Sleep Rarely Expected",
+  "Ansible Playbook Author",
+  "Prometheus Fire Stealer",
+  "Grafana Dashboard Artist",
+  "Load Balancer Juggler",
+  "Microservices Wrangler",
+  "Log Analysis Detective",
+  "Performance Optimisation Wizard"
 ];
 
 function rotateTagline() {
