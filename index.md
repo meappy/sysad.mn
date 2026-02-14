@@ -78,7 +78,7 @@ title: Gerald Sim - Systems Builder
       <div class="expertise-card" data-tilt>
         <div class="card-header">
           <div class="card-icon">🔄</div>
-          <h3>DevOps Practices</h3>
+          <h3>DevOps</h3>
         </div>
         <div class="card-content">
           <p>Bridging development and operations with CI/CD pipelines and automated workflows</p>
@@ -95,11 +95,26 @@ title: Gerald Sim - Systems Builder
           <h3>Cloud Architecture</h3>
         </div>
         <div class="card-content">
-          <p>Designing cloud-native solutions for scalability, security, and cost optimization</p>
+          <p>Designing cloud-native solutions for scalability, security, and cost optimisation</p>
           <div class="card-tags">
             <span class="tag">AWS</span>
             <span class="tag">Azure</span>
             <span class="tag">GCP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="expertise-card" data-tilt>
+        <div class="card-header">
+          <div class="card-icon">🏗️</div>
+          <h3>Systems Builder</h3>
+        </div>
+        <div class="card-content">
+          <p>Custom development with AI tools</p>
+          <div class="card-tags">
+            <span class="tag">Full Stack</span>
+            <span class="tag">AI-Assisted</span>
+            <span class="tag">Rapid Prototyping</span>
           </div>
         </div>
       </div>
@@ -130,7 +145,7 @@ title: Gerald Sim - Systems Builder
         <span class="contact-label">GitHub</span>
       </a>
 
-      <a href="https://cal.com/geraldsim" class="contact-item booking" target="_blank">
+      <a href="/book/" class="contact-item booking">
         <span class="contact-icon">📅</span>
         <span class="contact-label">Book a Call</span>
       </a>
@@ -805,7 +820,7 @@ const taglines = [
   "Serverless But Not Sleepless",
   "Making Servers Purr Since 2010",
   "Professional YAML Whisperer",
-  "Deployment Velocity Maximizer",
+  "Deployment Velocity Maximiser",
   "SRE: Sleep Rarely Expected",
   "Ansible Playbook Author",
   "Prometheus Fire Stealer",
