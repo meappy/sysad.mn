@@ -1,5 +1,5 @@
 # Site Configuration for sysad.mn
-title: "Gerald Sim - Technology Professional"
+title: "Gerald Sim - Systems Builder"
 description: "All things Automation"
 baseurl: ""
 url: "https://sysad.mn"
@@ -10,7 +10,7 @@ author:
   email: "contact@sysad.mn"
   linkedin: "geraldsim"
   github: "meappy"
-  location: "Mongolia"
+  location: "Singapore & Australia"
 
 # Build Settings
 markdown: kramdown

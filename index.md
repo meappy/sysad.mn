@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gerald Sim - Technology Professional
+title: Gerald Sim - Systems Builder
 ---
 
 <div class="ear-mark-link">
@@ -128,6 +128,11 @@ title: Gerald Sim - Technology Professional
       <a href="https://github.com/meappy" class="contact-item github" target="_blank">
         <span class="contact-icon">gh</span>
         <span class="contact-label">GitHub</span>
+      </a>
+
+      <a href="https://cal.com/geraldsim" class="contact-item booking" target="_blank">
+        <span class="contact-icon">📅</span>
+        <span class="contact-label">Book a Call</span>
       </a>
     </div>
   </div>
@@ -554,7 +559,7 @@ body::before {
   gap: 3rem;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -589,6 +594,11 @@ body::before {
 .contact-item.github:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
+}
+
+.contact-item.booking:hover {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
 }
 
 .contact-icon {
@@ -803,7 +813,8 @@ const taglines = [
   "Load Balancer Juggler",
   "Microservices Wrangler",
   "Log Analysis Detective",
-  "Performance Optimisation Wizard"
+  "Performance Optimisation Wizard",
+  "Systems Builder, Dream Deployer"
 ];
 
 function rotateTagline() {
