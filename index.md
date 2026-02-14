@@ -62,10 +62,10 @@ title: Gerald Sim - Systems Builder
       <div class="expertise-card" data-tilt>
         <div class="card-header">
           <div class="card-icon">🤖</div>
-          <h3>AI Tooling</h3>
+          <h3>AI Automation</h3>
         </div>
         <div class="card-content">
-          <p>Leveraging AI and automation tools to streamline development and operational workflows</p>
+          <p>Integrating AI into workflows to automate repetitive tasks and accelerate delivery</p>
           <div class="card-tags">
             <span class="tag">Claude</span>
             <span class="tag">GPT</span>
@@ -110,7 +110,7 @@ title: Gerald Sim - Systems Builder
           <h3>Systems Builder</h3>
         </div>
         <div class="card-content">
-          <p>Custom development with AI tools</p>
+          <p>Designing and building custom solutions from concept to production</p>
           <div class="card-tags">
             <span class="tag">Full Stack</span>
             <span class="tag">AI-Assisted</span>
