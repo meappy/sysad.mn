@@ -1,11 +1,20 @@
-# sysad.mn - Gerald Sim's Professional Website
+<p align="center"><img src="docs/banner.svg" alt="sysad.mn" width="800"></p>
 
-> Personal website and blog for Gerald Sim - Systems Administrator, DevOps Engineer, and Technology Professional
+<p align="center">
+  <a href="https://jekyllrb.com/"><img src="https://img.shields.io/badge/Jekyll-4.x-CC0000?logo=jekyll&logoColor=white" alt="Jekyll"></a>
+  <a href="https://pages.github.com/"><img src="https://img.shields.io/badge/GitHub%20Pages-deployed-222222?logo=github&logoColor=white" alt="GitHub Pages"></a>
+  <a href="https://www.ruby-lang.org/"><img src="https://img.shields.io/badge/Ruby-3.x-CC342D?logo=ruby&logoColor=white" alt="Ruby"></a>
+  <a href="https://sysad.mn"><img src="https://img.shields.io/website?url=https%3A%2F%2Fsysad.mn&label=sysad.mn" alt="Website"></a>
+</p>
 
-**Live Site**: [sysad.mn](https://sysad.mn)  
+---
+
+> Personal website and blog for Gerald Sim — Systems Administrator, DevOps Engineer, and Technology Professional
+
+**Live Site**: [sysad.mn](https://sysad.mn)
 **Repository Type**: Public (GitHub Pages)
 
-## 🎯 Purpose
+## Purpose
 
 Professional showcase featuring:
 - Interactive CV/Resume
@@ -13,7 +22,7 @@ Professional showcase featuring:
 - Project portfolio
 - Professional networking
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 - **Framework**: Jekyll (Ruby-based static site generator)
 - **Hosting**: GitHub Pages (Free)
@@ -21,7 +30,7 @@ Professional showcase featuring:
 - **SSL/CDN**: Cloudflare Free tier
 - **Content**: Markdown + Liquid templating
 
-## 📁 Structure
+## Structure
 
 ```
 sysad.mn/
@@ -35,7 +44,7 @@ sysad.mn/
 └── _config.yml      # Jekyll configuration
 ```
 
-## 🚀 Development
+## Development
 
 ### Setup Requirements
 - Docker installed locally
@@ -69,13 +78,13 @@ touch _posts/YYYY-MM-DD-post-title.md
 touch _pages/page-name.md
 ```
 
-## 🔗 Professional Links
+## Professional Links
 
 - **LinkedIn**: [geraldsim](https://www.linkedin.com/in/geraldsim/)
 - **GitHub**: [meappy](https://github.com/meappy)
 - **Email**: Available via contact form
 
-## 🤖 Automation
+## Automation
 
 Content generation and deployment automation handled by private ops repository:
 `sysad.mn-ops` (AI agents, deployment scripts, monitoring)
