@@ -1,4 +1,10 @@
-<p align="center"><img src="docs/banner.svg" alt="sysad.mn" width="800"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/banner-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="docs/banner-light.svg">
+    <img alt="sysad.mn" src="docs/banner-dark.svg" width="800">
+  </picture>
+</p>
 
 <p align="center">
   <a href="https://jekyllrb.com/"><img src="https://img.shields.io/badge/Jekyll-4.x-CC0000?logo=jekyll&logoColor=white" alt="Jekyll"></a>

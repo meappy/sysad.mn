@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#A78BFA;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Terminal icon -->
+  <g transform="translate(260, 45)">
+    <rect x="0" y="0" width="56" height="42" rx="4" ry="4" fill="none" stroke="#A78BFA" stroke-width="2"/>
+    <rect x="0" y="0" width="56" height="12" rx="4" ry="0" fill="#A78BFA" opacity="0.3"/>
+    <circle cx="8" cy="6" r="2" fill="#A78BFA" opacity="0.7"/>
+    <circle cx="16" cy="6" r="2" fill="#A78BFA" opacity="0.7"/>
+    <circle cx="24" cy="6" r="2" fill="#A78BFA" opacity="0.7"/>
+    <text x="8" y="30" font-family="monospace" font-size="12" fill="#A78BFA" opacity="0.9">$ _</text>
+  </g>
+
+  <!-- Title -->
+  <text x="400" y="115" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="700" fill="#1f2937" letter-spacing="2">sysad.mn</text>
+
+  <!-- Accent line -->
+  <rect x="280" y="130" width="240" height="2" rx="1" fill="url(#accent)"/>
+
+  <!-- Subtitle -->
+  <text x="400" y="160" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="16" fill="#6b7280" letter-spacing="3" font-weight="300">Infrastructure, DevOps, Cloud, AI Tooling</text>
+</svg>
