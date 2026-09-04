@@ -24,3 +24,9 @@ vendor/cache/
 # Temporary files
 tmp/
 temp/
+# Playwright MCP session output
+.playwright-mcp/
+
+# Named-client CV variants live in the private sysad.mn-ops repo, never here
+assets/cv/*-named.*
+assets/cv/gerald-sim-cv-2026.pdf

@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<title>Gerald Sim — CV</title>
+<style>
+  @page { size: A4; margin: 11mm 14mm; }
+
+  :root {
+    --ink:      #16202b;
+    --body:     #33414f;
+    --muted:    #6b7885;
+    --rule:     #d8dee5;
+    --accent:   #0f5c8c;
+    --accent-2: #0f5c8c;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+    font-size: 9.35pt;
+    line-height: 1.375;
+    color: var(--body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sans { font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif; }
+
+  /* ---------- header ---------- */
+  header { border-bottom: 2.5pt solid var(--accent); padding-bottom: 7pt; margin-bottom: 11pt; }
+
+  h1 {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 23pt;
+    font-weight: 700;
+    letter-spacing: -0.4pt;
+    color: var(--ink);
+    line-height: 1.05;
+  }
+
+  .role {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 9.6pt;
+    font-weight: 600;
+    letter-spacing: 0.9pt;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 4pt;
+  }
+
+  .contact {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 8.4pt;
+    color: var(--muted);
+    margin-top: 6pt;
+  }
+  .contact a { color: var(--muted); text-decoration: none; }
+  .contact .sep { color: var(--rule); margin: 0 5pt; }
+
+  /* ---------- sections ---------- */
+  h2 {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 8.2pt;
+    font-weight: 700;
+    letter-spacing: 1.5pt;
+    text-transform: uppercase;
+    color: var(--ink);
+    padding-bottom: 3pt;
+    border-bottom: 0.6pt solid var(--rule);
+    margin: 11pt 0 6pt;
+  }
+  h2:first-of-type { margin-top: 0; }
+
+  .summary { font-size: 9.8pt; line-height: 1.5; }
+
+  /* ---------- skills ---------- */
+  .skills { display: grid; grid-template-columns: 74pt 1fr; gap: 2.6pt 10pt; font-size: 9.05pt; }
+  .skills dt {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 8pt; font-weight: 700; letter-spacing: 0.4pt;
+    text-transform: uppercase; color: var(--accent); padding-top: 1pt;
+  }
+  .skills dd { color: var(--body); }
+
+  /* ---------- experience ---------- */
+  .job { margin-bottom: 7.6pt; break-inside: avoid; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10pt; }
+  .job-title {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 10pt; font-weight: 700; color: var(--ink);
+  }
+  .job-title .at { font-weight: 500; color: var(--body); }
+  .dates {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 8.2pt; font-weight: 600; color: var(--muted);
+    white-space: nowrap; letter-spacing: 0.2pt;
+  }
+  .job-sub {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 8.4pt; font-style: italic; color: var(--muted); margin-top: 1.5pt;
+  }
+  ul { list-style: none; margin-top: 4pt; }
+  li { position: relative; padding-left: 10pt; margin-bottom: 2.2pt; }
+  li::before {
+    content: "";
+    position: absolute; left: 1.5pt; top: 4.4pt;
+    width: 2.6pt; height: 2.6pt; border-radius: 50%;
+    background: var(--accent);
+  }
+
+  /* ---------- two-column tail ---------- */
+  .tail { display: grid; grid-template-columns: 1fr 1fr; gap: 0 22pt; break-inside: avoid; }
+  .row { display: flex; justify-content: space-between; gap: 8pt; margin-bottom: 2pt; font-size: 9.05pt; }
+  .row .y {
+    font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 8.2pt; color: var(--muted); white-space: nowrap;
+  }
+  .row strong { color: var(--ink); font-weight: 600; }
+  .note { font-size: 8.4pt; color: var(--muted); font-style: italic; margin-top: 3pt; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Gerald Sim</h1>
+  <div class="role">Cloud Infrastructure&nbsp;&middot;&nbsp;Site Reliability&nbsp;&middot;&nbsp;Kubernetes&nbsp;&middot;&nbsp;Automation</div>
+  <div class="contact">
+    gerald@meappy.com<span class="sep">|</span>Adelaide, South Australia<span class="sep">|</span><a href="https://sysad.mn">sysad.mn</a><span class="sep">|</span><a href="https://www.linkedin.com/in/geraldsim">linkedin.com/in/geraldsim</a><span class="sep">|</span><a href="https://github.com/meappy">github.com/meappy</a>
+  </div>
+</header>
+
+<h2>Profile</h2>
+<p class="summary">
+Infrastructure engineer with 15+ years on production Linux and cloud, usually the senior infrastructure voice in a small team. I build and own the foundation a platform runs on: landing zones, networking and private connectivity, Terraform and CI/CD, IAM and secrets, observability and recovery, across GCP, AWS and Azure, with Kubernetes in production on GKE, EKS, AKS, Rancher and OpenShift. Most recently in regulated financial infrastructure, building the platform beneath a regulated settlement service along with the documentation its clients' auditors ask for. Much of my work is automation: taking manual steps out of operational and back-office processes, using AI where it beats a script.
+</p>
+
+<h2>Core Skills</h2>
+<dl class="skills">
+  <dt>Cloud</dt>          <dd>GCP &middot; AWS &middot; Azure. Landing zones, VPC/CIDR design, private connectivity, cost visibility (FinOps)</dd>
+  <dt>Kubernetes</dt>     <dd>GKE &middot; EKS &middot; AKS &middot; Rancher/RKE &middot; k3s &middot; OpenShift. Helm, ArgoCD, image supply chain</dd>
+  <dt>IaC &amp; CI/CD</dt><dd>Terraform (module design, remote state, drift control) &middot; Ansible &middot; SaltStack &middot; GitHub Actions &middot; Azure DevOps &middot; HCP Terraform</dd>
+  <dt>Security</dt>       <dd>IAM &amp; least privilege &middot; Workload Identity Federation &middot; Secret Manager / KMS &middot; network segmentation &middot; Cloud Armor &middot; OIDC/SAML (Entra, Google)</dd>
+  <dt>Observability</dt>  <dd>Prometheus &middot; Grafana &middot; Splunk &middot; Elastic &middot; New Relic. SLOs, alerting, runbooks, incident response</dd>
+  <dt>Platform</dt>       <dd>RHEL &middot; Ubuntu &middot; Nginx/Apache &middot; MySQL/MariaDB &middot; Redis &middot; DNS, TLS, routing, firewalling &middot; Bash, Python</dd>
+  <dt>AI automation</dt>   <dd>Vision and language providers wired into operational workflows &middot; Playwright browser automation &middot; deterministic-first, model-on-fallback design &middot; agent tooling run as normal Kubernetes workloads</dd>
+  <dt>Ways of working</dt><dd>Agile &middot; service delivery management &middot; architecture &amp; design authoring &middot; client and auditor engagement</dd>
+</dl>
+
+<h2>Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title">Cloud Infrastructure Contractor, <span class="at">financial market infrastructure client</span></div>
+    <div class="dates">Apr 2026 &ndash; Jul 2026</div>
+  </div>
+  <div class="job-sub">Remote, Australia &middot; GCP &middot; platform foundation, extended into a second phase for observability and operational readiness</div>
+  <ul>
+    <li>Designed and built the GCP foundation for a regulated settlement platform: VPC and network topology, IAM baseline, and a Terraform monorepo so every environment is reproducible from code.</li>
+    <li>Delivered private network connectivity from GKE workloads to managed distributed-ledger infrastructure, covering VPC peering, firewall policy and private DNS.</li>
+    <li>Secured participant-facing endpoints with an external HTTPS load balancer and Cloud Armor, and federated OIDC sign-in via Microsoft Entra, plus uptime checks and alert routing.</li>
+    <li>Stood up the delivery model: GitHub Actions to GCP via Workload Identity Federation, ArgoCD, Artifact Registry, and a two-tier secrets pattern using Google Secret Manager, with production applies gated on required reviewers.</li>
+    <li>Built the observability layer in the second phase: Managed Prometheus and Cloud Monitoring dashboards, centralised Cloud Logging, and alerting routed to the nominated channel.</li>
+    <li>Authored the architecture, decision record and secrets-management documents used as the technical evidence base in client and partner due-diligence conversations.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title">Kubernetes &amp; GCP Cloud Operations Lead, <span class="at">Wipro at Woolworths Group</span></div>
+    <div class="dates">Mar 2024 &ndash; Present</div>
+  </div>
+  <div class="job-sub">Adelaide, South Australia</div>
+  <ul>
+    <li>Own how the Kubernetes and GCP platform is run day to day, and build GCP capability across the team.</li>
+    <li>Drive the GCP automation programme, cutting manual steps out of routine platform work and standardising how environments are managed.</li>
+    <li>Lead Kubernetes delivery across Woolworths' container platform, holding projects to agreed quality and process standards at retail scale.</li>
+    <li>Diagnose performance problems on Kubernetes clusters and turn the findings into pre-emptive fixes that remove repeat failures; improve the shared infrastructure codebase and review the team's changes.</li>
+    <li>Work with engineering teams and stakeholders on platform direction, prototype new approaches, and mentor engineers.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title">Independent Consultant, <span class="at">Meatmen (Singapore)</span></div>
+    <div class="dates">Sep 2025 &ndash; Present</div>
+  </div>
+  <div class="job-sub">Remote &middot; AWS &middot; e-commerce platform</div>
+  <ul>
+    <li>Deliver and run the AWS platform behind a premium-meats e-commerce business: Terraform-provisioned environments, automated CI/CD for a .NET and Next.js stack, and separate POC, staging and production environments.</li>
+    <li>Own the AWS account, its running cost, and the deployment and security documentation the client works from.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title">Site Reliability Engineer / DevOps Engineer, <span class="at">Alcidion Group</span></div>
+    <div class="dates">Nov 2019 &ndash; Feb 2024</div>
+  </div>
+  <div class="job-sub">Adelaide, South Australia &middot; clinical software for hospitals in Australia, New Zealand and the UK</div>
+  <ul>
+    <li>Built and operated the cloud infrastructure for Smartpage (clinical messaging) and Miya Precision (clinical decision support): healthcare workloads with real availability and privacy obligations.</li>
+    <li>Deployed container platforms across Azure AKS, AWS EKS and on-premise Rancher/RKE (k8s and k3s), led the migration of workloads to GCP and GKE, and built out continuous deployment pipelines in Azure DevOps.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title">Senior Cloud Engineer / Cloud Consultant, <span class="at">5G Networks and Comunet</span></div>
+    <div class="dates">Mar 2019 &ndash; Nov 2019</div>
+  </div>
+  <div class="job-sub">Adelaide, South Australia</div>
+  <ul>
+    <li>Provided technical leadership on AWS and Azure, supporting pre-sales with architecture design, requirements gathering, solutioning and proof-of-concept delivery.</li>
+    <li>Designed and implemented AWS EKS with Rancher, Helm charts and an integrated CI/CD pipeline, and won AWS EdStart funding for an EdTech client migrating to AWS.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title">Technical Service Manager / Lead Engineer / Linux Escalation Engineer, <span class="at">Hostworks</span></div>
+    <div class="dates">May 2011 &ndash; Feb 2019</div>
+  </div>
+  <div class="job-sub">Adelaide, South Australia &middot; national enterprise clients</div>
+  <ul>
+    <li>Owned service delivery, incident management and solution design for enterprise clients including McDonald's, Volkswagen Group Australia, SBS, GM Holden, Sony Music, IAG and Australia Post.</li>
+    <li>Automated full-stack blue/green environments in AWS with CloudFormation (VPC, EC2, RDS, ElastiCache) and introduced Docker-based solutions.</li>
+    <li>Delivered high-profile campaigns and events under load (McDonald's Monopoly, SBS Eurovision and Tour de France, vehicle launches) with capacity planned and rehearsed in advance.</li>
+    <li>Ran escalations across a 300+ RHEL estate in a 24/7 high-severity environment, and mentored operations and NOC staff.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="job-title">Senior Systems Engineer / Systems Engineer, <span class="at">Ufinity Pte Ltd</span></div>
+    <div class="dates">Dec 2006 &ndash; Feb 2011</div>
+  </div>
+  <div class="job-sub">Singapore</div>
+  <ul>
+    <li>Led operations for Mail Ranger, an in-house anti-spam email service for a large healthcare group, and for StarHub pfingo systems; deployed UNIX/Linux and Windows estates, VMware ESX/ESXi virtualisation and replicated MySQL servers for commercial and Singapore government clients.</li>
+  </ul>
+</div>
+
+<h2>Education &amp; Certifications</h2>
+<div class="tail">
+  <div>
+    <div class="row"><span><strong>BA, Mass Communication (Multimedia)</strong><br>Curtin University of Technology</span><span class="y">2003&ndash;2006</span></div>
+    <div class="row"><span><strong>Diploma, Digital Media Design</strong><br>Nanyang Polytechnic</span><span class="y">1999&ndash;2002</span></div>
+  </div>
+  <div>
+    <div class="row"><span>Red Hat Certified Engineer (RHCE)</span><span class="y">2010</span></div>
+    <div class="row"><span>RHCSA in Red Hat OpenStack</span><span class="y">2015</span></div>
+    <div class="row"><span>Red Hat Certified Virtualization Administrator</span><span class="y">2014</span></div>
+    <div class="row"><span>Certificates of Expertise: PaaS, Performance Tuning, Network Security</span><span class="y">2012&ndash;2016</span></div>
+  </div>
+</div>
+<p class="note">Australian working rights &middot; Languages: English (native), Mandarin (professional working)</p>
+
+</body>
+</html>
