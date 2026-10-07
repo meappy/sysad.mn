@@ -29,6 +29,17 @@ collections:
 
 # Defaults
 defaults:
+  # Social sharing card used by Slack, LinkedIn, WhatsApp, X and iMessage.
+  # jekyll-seo-tag only reads `image` from page data, so it is injected here
+  # for every page; override it in a page's front matter for a bespoke card.
+  - scope:
+      path: ""
+    values:
+      image:
+        path: "/assets/img/og-image.png"
+        width: 1200
+        height: 630
+        alt: "sysad.mn — Gerald Sim, Systems Builder. Infrastructure, DevOps, Cloud, AI Automation."
   - scope:
       path: ""
       type: "posts"
