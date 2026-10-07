@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0f23"/>
+      <stop offset="55%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#64ffda"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.38"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64ffda" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#64ffda" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.30"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- lava-lamp style glow blobs, echoing the homepage background -->
+  <circle cx="200" cy="140" r="300" fill="url(#glowA)"/>
+  <circle cx="1040" cy="520" r="340" fill="url(#glowB)"/>
+  <circle cx="980" cy="110" r="260" fill="url(#glowC)"/>
+
+  <!-- subtle grid -->
+  <g stroke="#64ffda" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 157.5H1200M0 315H1200M0 472.5H1200M300 0V630M600 0V630M900 0V630"/>
+  </g>
+
+  <!-- terminal card -->
+  <g transform="translate(96, 150)">
+    <rect x="0" y="0" width="1008" height="330" rx="18" fill="#0a0a0a" fill-opacity="0.55" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="0" y="0" width="1008" height="46" rx="18" fill="#8b5cf6" fill-opacity="0.14"/>
+    <rect x="0" y="28" width="1008" height="18" fill="#8b5cf6" fill-opacity="0.14"/>
+    <circle cx="30" cy="23" r="6" fill="#ff5f56" fill-opacity="0.85"/>
+    <circle cx="52" cy="23" r="6" fill="#ffbd2e" fill-opacity="0.85"/>
+    <circle cx="74" cy="23" r="6" fill="#27c93f" fill-opacity="0.85"/>
+    <text x="504" y="28" text-anchor="middle" font-family="Menlo, monospace" font-size="15" fill="#94a3b8">gerald@sysad.mn — zsh</text>
+
+    <text x="48" y="112" font-family="Menlo, monospace" font-size="24" fill="#64ffda">$</text>
+    <text x="80" y="112" font-family="Menlo, monospace" font-size="24" fill="#94a3b8">whoami</text>
+
+    <text x="48" y="188" font-family="Helvetica, Arial, sans-serif" font-size="78" font-weight="700" fill="#ffffff" letter-spacing="1">Gerald Sim</text>
+    <text x="48" y="232" font-family="Helvetica, Arial, sans-serif" font-size="30" font-weight="400" fill="#94a3b8">Systems Builder — All things Automation</text>
+
+    <rect x="48" y="258" width="300" height="4" rx="2" fill="url(#accent)"/>
+
+    <text x="48" y="300" font-family="Menlo, monospace" font-size="20" fill="#8b5cf6" letter-spacing="2">Infrastructure · DevOps · Cloud · AI Automation</text>
+  </g>
+
+  <!-- wordmark -->
+  <text x="96" y="92" font-family="Menlo, monospace" font-size="38" font-weight="700" fill="#ffffff" letter-spacing="1">sysad.mn</text>
+  <rect x="290" y="66" width="16" height="32" fill="#64ffda"/>
+
+  <text x="1104" y="92" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="20" fill="#64ffda" letter-spacing="3">SINGAPORE &#183; AUSTRALIA</text>
+
+  <rect x="96" y="548" width="1008" height="3" rx="1.5" fill="url(#accent)" opacity="0.8"/>
+  <text x="96" y="590" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#94a3b8">https://sysad.mn</text>
+</svg>
