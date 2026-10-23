@@ -27,6 +27,8 @@ temp/
 # Playwright MCP session output
 .playwright-mcp/
 
-# Named-client CV variants live in the private sysad.mn-ops repo, never here
+# CV sources live in the private sysad.mn-ops repo, never here.
+# Only the rendered, published PDF belongs in this repo.
+assets/cv/*.html
 assets/cv/*-named.*
 assets/cv/gerald-sim-cv-2026.pdf
